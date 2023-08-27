@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Учет раундов и счет</title>
+  <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+  <div class="container">
+    <h1 class="text-center mt-5">Учет раундов и счет</h1>
+
+    <div class="row mt-5">
+      <div class="col-md-6">
+        <div class="card">
+          <div class="card-body">
+            <h2 class="card-title">Команда 1</h2>
+            <div id="score1" class="display-4">0</div>
+            <button class="btn btn-primary mr-2" onclick="incrementScore(1)">+</button>
+            <button class="btn btn-primary" onclick="decrementScore(1)">-</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="card">
+          <div class="card-body">
+            <h2 class="card-title">Команда 2</h2>
+            <div id="score2" class="display-4">0</div>
+            <button class="btn btn-primary mr-2" onclick="incrementScore(2)">+</button>
+            <button class="btn btn-primary" onclick="decrementScore(2)">-</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row mt-5">
+      <div class="col-md-12">
+        <div class="card">
+          <div class="card-body">
+            <h2 class="card-title">Раунды</h2>
+            <ul id="round-list" class="list-group"></ul>
+            <button class="btn btn-primary mr-2 mt-3" onclick="addRound()">Добавить раунд</button>
+            <button class="btn btn-danger mt-3" onclick="removeRound()">Удалить последний раунд</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
